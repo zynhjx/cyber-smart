@@ -1,11 +1,20 @@
 
 body {
-    background-color: #100720;
+    margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#bg-video {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  min-width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
 }
 
 .container {
@@ -15,11 +24,12 @@ body {
 }
 
 .greet {
-    color: white;
+    color: rgb(255, 255, 255);
     width: 50%;
     display: flex;
     font-weight: 300;
     flex-direction: column;
+    padding-top: 80px;
 }
 
 .greet p {
@@ -46,6 +56,7 @@ p.third {
 
 p.fourth {
     margin-top: 20px;
+    max-width: 600px;
 }
 
 
