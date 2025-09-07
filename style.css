@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 
 #bg-video {
@@ -59,6 +60,41 @@ p.third {
 p.fourth {
     margin-top: 20px;
     max-width: 600px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.btn button {
+    width: 350px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: rgb(128, 28, 128);
+    color: white;
+    font-size: 70px;
+    box-shadow: 0 0 60px black;
+    font-family: 'Bitcount Single';
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-style: italic;
+    outline: none;
+    border-style: none;
+    opacity: 1;
+}
+
+.btn button:hover {
+    transform: scale(1.1);
+}
+
+.btn button:active {
+    box-shadow: 0 0 100px black;
+    transform: scale(1.08) rotate(2deg);
+    background: rgba(128, 28, 128, 0.871);
 }
 
 
