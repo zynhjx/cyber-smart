@@ -15,7 +15,6 @@ body {
   height: 100vh;
   min-width: 100%;
   object-fit: cover;
-  opacity: 0.9;
 }
 
 .container {
@@ -70,8 +69,8 @@ p.fourth {
 }
 
 .btn button {
-    width: 350px;
-    height: 100px;
+    width: 60%;
+    height: 15%;
     border-radius: 30px;
     background-color: rgb(128, 28, 128);
     color: white;
@@ -85,6 +84,8 @@ p.fourth {
     outline: none;
     border-style: none;
     opacity: 1;
+    max-width: 350px;
+    min-width: 230px;
 }
 
 .btn button:hover {
@@ -95,6 +96,105 @@ p.fourth {
     box-shadow: 0 0 100px black;
     transform: scale(1.08) rotate(2deg);
     background: rgba(128, 28, 128, 0.871);
+}
+
+@media (max-width: 1300px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .greet {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        height: 22vw;
+        max-height: none;
+        padding: 0;
+    }
+
+    .greet p {
+        
+    }
+
+    .h1 {
+        display: flex;
+    }
+
+    p.first, p.second {
+        font-size: 7vw;
+    }
+
+
+    p.first {
+        margin-right: 30px;
+    }
+
+    p.third {
+        font-size: 2.8vw;
+    }
+
+    p.fourth {
+        font-size: 1.5vw;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn button {
+        height: 70px;
+        /* max-height: 90px;
+        min-height: 70px; */
+        width: 150px;
+        font-size: 50px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+
+    }
+
+    video {
+        
+    }
+
+    .btn button {
+        
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+
+    }
+
+    video {
+        
+    }
+
+    .container {
+        
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+    body {
+        
+    }
+
+    video {
+        
+    }
 }
 
 
