@@ -29,8 +29,8 @@ body {
     display: flex;
     font-weight: 300;
     flex-direction: column;
-    padding-top: 80px;
     margin-left: 20px;
+    justify-content: center;
 }
 
 .greet p {
@@ -58,7 +58,7 @@ p.third {
 
 p.fourth {
     margin-top: 20px;
-    max-width: 600px;
+    font-size: 1.2vw;
 }
 
 .btn {
@@ -86,6 +86,7 @@ p.fourth {
     opacity: 1;
     max-width: 350px;
     min-width: 230px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn button:hover {
@@ -110,7 +111,7 @@ p.fourth {
         width: 100%;
         margin-left: 0;
         align-items: center;
-        height: 22vw;
+        height: 19vw;
         max-height: none;
         padding: 0;
     }
@@ -134,12 +135,13 @@ p.fourth {
 
     p.third {
         font-size: 2.8vw;
+        
     }
 
     p.fourth {
         font-size: 1.5vw;
         max-width: 50%;
-        text-align: center;
+        display: none;
     }
 
     .btn {
@@ -158,32 +160,32 @@ p.fourth {
 
 @media (max-width: 992px) {
     body {
-
     }
 
     video {
-        
     }
 
     .btn button {
-        
+        font-size: 5vw;
+        height: 7vw;
     }
 }
 
 @media (max-width: 768px) {
     body {
-
+        background-color: red;
+        align-items: start;
     }
 
     video {
-        
+        display: none;
     }
 
     .container {
-        
+        background-color: green;
     }
 
-
+    .
 
 }
 
