@@ -14,26 +14,40 @@ infi_castle.preload = "auto";
 const minecraft_mp3 = new Audio("./minecraft_click.mp3")
 minecraft_mp3.preload = "auto";
 
+
+
+function btns_visibility() {
+    container.style.display = "none";
+    btns.style.display = "flex";
+    back_btn.style.display = "block";
+}
+
+function welcome_page_visibility() {
+    container.style.display = "flex";
+    btns.style.display = "none";
+    back_btn.style.display = "none";
+}
+
+
 video.addEventListener("canplaythrough", function() {
     preloader.style.display = "none"; 
 });
 
-btn.addEventListener("click", function() {
-    container.style.display = "none";
-    btns.style.display = "flex";
-    back_btn.style.display = "block";
+if (sessionStorage.getItem("clicked") === "true") {
+    btns_visibility();
+}
 
-    const audio = infi_castle.cloneNode();
-    audio.play()
+btn.addEventListener("click", function() {
+    btns_visibility();
+
+    sessionStorage.setItem("clicked", "true")
+
 })
 
 back_btn.addEventListener("click", function() {
-    container.style.display = "flex";
-    btns.style.display = "none";
-    back_btn.style.display = "none";
+    welcome_page_visibility();
 
-    const audio = infi_castle.cloneNode();
-    audio.play()
+    sessionStorage.setItem("clicked", "false")
 })
 
 btns_fe.forEach(btn => {
@@ -43,11 +57,5 @@ btns_fe.forEach(btn => {
     })
 })
 
-btns_fe.forEach(btn => {
-    btn.addEventListener("click", function() {
-        const audio = infi_castle.cloneNode();
-        audio.play()
-    })
-})
 
 

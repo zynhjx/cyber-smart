@@ -245,12 +245,12 @@ p.fourth {
     position: absolute;
     display: none;
     flex-direction: column;
-    height: 45vh;
+    height: 35vh;
     justify-content: space-around;
 }
 
 .btns button {
-    width: 30vw;
+    width: 400px;
     height: 5vw;
     border-radius: 20px;
     font-family: 'Bitcount Single';

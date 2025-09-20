@@ -1,0 +1,50 @@
+
+body {
+    background-color: rgb(58, 13, 58);
+    user-select: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(77, 17, 77);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: 'Bitcount Grid Double';
+    color: white;
+    font-weight: 300;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    margin-right: 20px;
+    width: 45%;
+    justify-content: space-around;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 0;
+    color: white;
+    font-size: 25px;
+    font-family: 'Bitcount Single';
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: solid 2px aqua;
+    color: aqua;
+}
+
