@@ -136,10 +136,6 @@ p.fourth {
         padding: 0;
     }
 
-    .greet p {
-        
-    }
-
     .h1 {
         display: flex;
     }
@@ -177,11 +173,6 @@ p.fourth {
 }
 
 @media (max-width: 992px) {
-    body {
-    }
-
-    video {
-    }
 
     .btn button {
         font-size: 5vw;
@@ -203,11 +194,11 @@ p.fourth {
         background-color: green;
     }
 
-    .
+    
 
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     body {
         
     }
@@ -215,7 +206,7 @@ p.fourth {
     video {
         
     }
-}
+} */
 
 
 /*
