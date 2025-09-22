@@ -12,6 +12,7 @@ async function loadDashboard() {
       welcomeDiv.style.fontWeight = "bold";
       document.body.prepend(welcomeDiv);
     } else {
+        alert(response)
       window.location.href = "./login.html";
     }
   } catch (err) {
