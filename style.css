@@ -37,30 +37,6 @@ body {
   object-fit: cover;
 }
 
-.back-btn {
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    display: none;
-}
-
-.back-btn button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.back-btn button:hover {
-    transform: scale(1.1);
-}
-
-.back-btn img {
-    width: 50px;
-    height: auto;
-    
-}
-
 .container {
     display: flex;
     height: 85%;
@@ -241,30 +217,6 @@ p.fourth {
     }
 }
 
-.btns {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    height: 35vh;
-    justify-content: space-around;
-}
-
-.btns button {
-    width: 400px;
-    height: 5vw;
-    border-radius: 20px;
-    font-family: 'Bitcount Single';
-    font-size: 40px;
-    border: solid 2px rgb(0, 0, 0);
-    /* box-shadow: 0 0 100px violet; */
-    color: white;
-    background-color: rgb(128, 28, 128);
-    cursor: pointer;
-}
-
-.btns button:hover {
-    transform: scale(1.1);
-}
 
 /*
 
