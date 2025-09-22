@@ -20,11 +20,11 @@ video.addEventListener("canplaythrough", function() {
 
 
 
-btn.addEventListener("click", function() {
-    if () {
+// btn.addEventListener("click", function() {
+//     if () {
 
-    }
-})
+//     }
+// })
 
 
 
