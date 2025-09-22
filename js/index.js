@@ -25,11 +25,14 @@ btn.addEventListener("click", async () => {
 
     if (response.data.loggedIn) {
       window.location.href = "./dashboard.html"
+      alert("it exists")
     } else {
       window.location.href = "./login.html"
+      alert("it doesnt")
     }
   } catch (err) {
     console.error(err);
+    alert("catch doing it")
     window.location.href = "./login.html";
   }
 });
