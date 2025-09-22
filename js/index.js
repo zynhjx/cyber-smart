@@ -4,9 +4,6 @@ const preloader = document.querySelector(".preloader")
 
 const btn = document.querySelector(".btn button")
 const container = document.querySelector(".container")
-const btns = document.querySelector(".btns")
-const btns_fe = document.querySelectorAll(".btns button")
-const back_btn = document.querySelector(".back-btn")
 
 const infi_castle = new Audio("./infinity-castle-opening.mp3")
 infi_castle.preload = "auto";
@@ -20,11 +17,22 @@ video.addEventListener("canplaythrough", function() {
 
 
 
-// btn.addEventListener("click", function() {
-//     if () {
+btn.addEventListener("click", async () => {
+  try {
+    const response = await axios.get("cyber-smartbackend-production-ffc3.up.railway.app/dashboard-data", {
+      withCredentials: true
+    });
 
-//     }
-// })
+    if (response.data.loggedIn) {
+      window.location.href = "../dashboard.html"
+    } else {
+      window.location.href = "../login.html"
+    }
+  } catch (err) {
+    console.error(err);
+    window.location.href = "../login.html";
+  }
+});
 
 
 
