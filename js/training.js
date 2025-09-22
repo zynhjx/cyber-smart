@@ -1,7 +1,7 @@
 
-const nav = document.querySelector("nav");
-const navs = document.querySelectorAll("nav a");
+// const nav = document.querySelector("nav");
+// const navs = document.querySelectorAll("nav a");
 
-navs.forEach(a => {
+// navs.forEach(a => {
     
-})
+// })

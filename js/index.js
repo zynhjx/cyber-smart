@@ -24,13 +24,13 @@ btn.addEventListener("click", async () => {
     });
 
     if (response.data.loggedIn) {
-      window.location.href = "../dashboard.html"
+      window.location.href = "./dashboard.html"
     } else {
-      window.location.href = "../login.html"
+      window.location.href = "./login.html"
     }
   } catch (err) {
     console.error(err);
-    window.location.href = "../login.html";
+    window.location.href = "./login.html";
   }
 });
 
