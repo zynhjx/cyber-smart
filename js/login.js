@@ -14,7 +14,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         console.log("Response:", res.data);
 
         if (res.data.success) {
-            window.location.href = "/dashboard.html";
+            window.location.href = "../dashboard.html";
         }
     } catch (err) {
         console.error("Error:", err.response?.data || err.message);
