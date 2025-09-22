@@ -20,7 +20,8 @@ video.addEventListener("canplaythrough", function() {
 btn.addEventListener("click", async () => {
   try {
     const response = await axios.get("https://cyber-smartbackend-production-ffc3.up.railway.app/dashboard-data", {
-      withCredentials: true
+      withCredentials: true,
+      validateStatus: () => true
     });
 
     if (response.data.loggedIn) {
