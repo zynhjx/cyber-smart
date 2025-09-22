@@ -13,21 +13,21 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     }
 
     try {
-    const res = await axios.post(
-        "https://cyber-smartbackend-production-ffc3.up.railway.app/register",
-        { username, email, password }
-    );
+        const res = await axios.post(
+            "https://cyber-smartbackend-production-ffc3.up.railway.app/register",
+            { username, email, password }
+        );
 
-    console.log("Response:", res.data);
+        alert(res)
 
-    if (res.data.success) {
-        alert("Account created successfully!");
-        window.location.href = "login.html";
-    } else {
-        alert(res.data.message || "Registration failed.");
-    }
+        if (res.data.success) {
+            alert("Account created successfully!");
+            window.location.href = "login.html";
+        } else {
+            alert(res.data.message || "Registration failed.");
+        }
     } catch (err) {
         console.error("Error:", err.response?.data || err.message);
-        alert("Something went wrong. Try again.");
+        alert(err.message);
     }
 });
