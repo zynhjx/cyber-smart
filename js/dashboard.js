@@ -12,11 +12,11 @@ async function loadDashboard() {
       welcomeDiv.style.fontWeight = "bold";
       document.body.prepend(welcomeDiv);
     } else {
-      window.location.href = "../login.html";
+      window.location.href = "./login.html";
     }
   } catch (err) {
     console.error("Session check failed:", err);
-    window.location.href = "../login.html";
+    window.location.href = "./login.html";
   }
 }
 window.addEventListener("DOMContentLoaded", loadDashboard);
