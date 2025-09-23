@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CyberSmart</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Russo+One&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
             <p>Getting things ready...</p>
         </div>
         <video autoplay muted loop preload="auto" id="bg-video">
-            <source src="./assets/looped-bg.mp4" type="video/mp4">
+            <source src="looped-bg.mp4" type="video/mp4">
         </video>
         <div class="container">
             <div class="greet">
@@ -26,10 +26,9 @@
                 <p class="fourth">CyberSmart helps you improve your instincts and spot threats before they hit.</p>
             </div>
             <div class="btn">
-                <button>Play</button>
+                <button onclick="window.location.href='login.html'">Play</button>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./js/index.js"></script>
+    <script src="index.js"></script>
     </body>
 </html>
