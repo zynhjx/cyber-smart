@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CyberSmart Training</title>
-  <link rel="stylesheet" href="./dashboard.css">
+  <link rel="stylesheet" href="training.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
@@ -13,27 +13,214 @@
 <body>
   <header>
     <a href="index.html" class="logo-link">
-        <h1>CyberSmart</h1>
+      <h1>CyberSmart</h1>
     </a>
     <nav>
       <a href="./dashboard.html">Dashboard</a>
       <a href="./training.html" class="active">Training</a>
       <a href="./challenge.html">Challenge</a>
-      <a href="./pish_guard.html">PhishGuard</a>
+      <a href="#">PhishGuard</a>
     </nav>
   </header>
 
-  <main class="card-container">
-    <div class="card" style="width: 80%; max-width: 900px; height: auto;">
-      <h2>Welcome to CyberSmart Training</h2>
-      <p>
-        Here you’ll find interactive lessons designed to help you strengthen your cybersecurity knowledge. 
-        Work through scenarios, learn practical defenses, and gain the skills to stay safe online.
-      </p>
-      <a href="#" id="startLesson">Begin Lesson 1</a>
+  <main>
+    <h2>Training Modules</h2>
+
+    <div class="scroll-container">
+      <div class="accordion" id="accordionScroll">
+        
+        <!-- Lesson Viewer -->
+        <div id="lesson-viewer" class="lesson-viewer hidden">
+          <button id="close-viewer">✖</button>
+          <h3 id="lesson-title"></h3>
+          <p id="lesson-content">Select a lesson to see details.</p>
+        </div>
+
+        <!-- Modules -->
+        <div class="accordion-item">
+          <div class="accordion-header">🧠 Module 1: Introduction to Cybersecurity</div>
+          <div class="accordion-content">
+            <ul>
+              <li><a href="module1-1.html">Lesson 1.1 – Introduction to Cybersecurity</a></li>
+              <li><a href="module1-2.html">Lesson 1.2 – Cybersecurity in Daily Life</a></li>
+              <li><a href="module1-3.html">Lesson 1.3 – Identifying Online Threats</a></li>
+              <li><a href="module1-4.html">Lesson 1.4 – Safe Browsing Habits</a></li>
+              <li><a href="module1-5.html">Lesson 1.5 – Password Security</a></li>
+              <li><a href="module1-6.html">Lesson 1.6 – Social Media Awareness</a></li>
+              <li><a href="module1-7.html">Lesson 1.7 – Email Safety</a></li>
+              <li><a href="module1-8.html">Lesson 1.8 – Mobile Device Security</a></li>
+              <li><a href="module1-9.html">Lesson 1.9 – Protecting Personal Data</a></li>
+              <li><a href="module1-10.html">Lesson 1.10 – Review & Quiz</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🔐 Module 2: Passwords & Authentication</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Creating Strong Passwords</li>
+              <li>Common Password Mistakes</li>
+              <li>Multi-Factor Authentication (MFA) Basics</li>
+              <li>Biometric Authentication (Fingerprints, Face ID)</li>
+              <li>Password Managers: How They Work</li>
+              <li>Avoiding Credential Reuse</li>
+              <li>Protecting Security Questions</li>
+              <li>Recognizing Credential Theft Attacks</li>
+              <li>Updating & Rotating Passwords Regularly</li>
+              <li>Single Sign-On (SSO) Pros & Cons</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">📨 Module 3: Email & Messaging Safety</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Anatomy of a Phishing Email</li>
+              <li>Spotting Suspicious Links</li>
+              <li>Social Engineering via Messaging Apps</li>
+              <li>Email Attachments: Risks & Precautions</li>
+              <li>Business Email Compromise (BEC)</li>
+              <li>SMS Phishing (Smishing)</li>
+              <li>Voice Phishing (Vishing)</li>
+              <li>Secure Messaging Apps & Encryption</li>
+              <li>Spam Filters: How They Work</li>
+              <li>What to Do if You Click a Malicious Link</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🌐 Module 4: Safe Browsing & Online Behavior</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Identifying Secure Websites (HTTPS vs HTTP)</li>
+              <li>Safe Use of Public Wi-Fi</li>
+              <li>Recognizing Fake Websites</li>
+              <li>Avoiding Malvertising & Pop-Ups</li>
+              <li>Private Browsing vs Incognito Mode</li>
+              <li>Using a VPN Safely</li>
+              <li>Clearing Cookies & Cache</li>
+              <li>Recognizing Browser Hijacking</li>
+              <li>Risks of Downloading from Unknown Sources</li>
+              <li>Best Practices for Online Shopping</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">📱 Module 5: Mobile Device Security</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Setting Strong Device Locks (PIN, Pattern, Biometrics)</li>
+              <li>Risks of Jailbreaking/Rooting Devices</li>
+              <li>App Permissions: What to Allow & Deny</li>
+              <li>Spotting Malicious Apps</li>
+              <li>Safe Mobile Banking Practices</li>
+              <li>Keeping Devices Updated</li>
+              <li>Mobile Phishing Scams</li>
+              <li>Secure Bluetooth & NFC Usage</li>
+              <li>Mobile Data Encryption</li>
+              <li>Tracking & Wiping Lost Devices</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">💾 Module 6: Data Privacy & Protection</div>
+          <div class="accordion-content">
+            <ul>
+              <li>What is Personal Identifiable Information (PII)?</li>
+              <li>How Companies Use Your Data</li>
+              <li>Cloud Storage Security Basics</li>
+              <li>Data Breaches Explained</li>
+              <li>Encrypting Files & Devices</li>
+              <li>Protecting Your Digital Identity</li>
+              <li>Risks of Oversharing Online</li>
+              <li>Backups: Local vs Cloud</li>
+              <li>Understanding Privacy Policies</li>
+              <li>Data Protection Laws (e.g., GDPR, Data Privacy Act)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🧑‍💻 Module 7: Social Engineering Awareness</div>
+          <div class="accordion-content">
+            <ul>
+              <li>What is Social Engineering?</li>
+              <li>Pretexting Attacks</li>
+              <li>Tailgating & Physical Social Engineering</li>
+              <li>Baiting Attacks</li>
+              <li>Psychological Manipulation Techniques</li>
+              <li>Social Media Exploitation</li>
+              <li>Impersonation Scams</li>
+              <li>Dumpster Diving & Info Gathering</li>
+              <li>Real-Life Case Studies</li>
+              <li>How to Report Social Engineering Attempts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🧩 Module 8: Malware Awareness</div>
+          <div class="accordion-content">
+            <ul>
+              <li>What is Malware?</li>
+              <li>Viruses vs Worms vs Trojans</li>
+              <li>Spyware & Adware Explained</li>
+              <li>Ransomware: How It Works</li>
+              <li>Keyloggers & Credential Stealers</li>
+              <li>Botnets & DDoS Attacks</li>
+              <li>Rootkits & Backdoors</li>
+              <li>Mobile Malware Threats</li>
+              <li>Signs Your Device is Infected</li>
+              <li>Best Practices to Prevent Malware</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🛡️ Module 9: Safe Work Practices</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Cyber Hygiene at the Workplace</li>
+              <li>Secure File Sharing Practices</li>
+              <li>Recognizing Insider Threats</li>
+              <li>Physical Security of Devices</li>
+              <li>Secure Remote Work Tips</li>
+              <li>Safe Use of Collaboration Tools</li>
+              <li>Managing USB Devices Safely</li>
+              <li>Document Classification & Handling</li>
+              <li>Incident Reporting Procedures</li>
+              <li>Building a Cybersecurity Culture</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">🔍 Module 10: Advanced Topics & Threat Intelligence</div>
+          <div class="accordion-content">
+            <ul>
+              <li>Basics of Ethical Hacking & Penetration Testing</li>
+              <li>Introduction to Threat Intelligence</li>
+              <li>SIEM (Security Information & Event Management) Overview</li>
+              <li>Threat Modeling Frameworks</li>
+              <li>Cyber Kill Chain Explained</li>
+              <li>Red Team vs Blue Team Exercises</li>
+              <li>Basics of Digital Forensics</li>
+              <li>Common Cybersecurity Tools (Wireshark, Nmap, etc.)</li>
+              <li>Introduction to Zero Trust Security</li>
+              <li>The Future of Cybersecurity (AI, Quantum Threats)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
   </main>
 
-  <script src="./training.js"></script>
+  <script src="training.js"></script>
 </body>
 </html>
